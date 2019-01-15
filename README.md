@@ -49,3 +49,5 @@ To run the apps you have to install the dependencies inside the functions(if the
 `  --capabilities CAPABILITY_IAM \`<br />
 `  --region us-west-2`<br />
 
+
+**[AWS SAM TEMPLATE](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-template-basics.html)**
