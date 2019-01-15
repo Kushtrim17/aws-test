@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: 'Generate random number.'
+Resources:
+  hello:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: handler.insertUsers
+      Runtime: nodejs8.10
+      CodeUri: .
+      Description: 'A simple AWS example'
+      MemorySize: 512
+      Timeout: 10
+      Events:
+        Api1:
+          Type: Api
+          Properties:
+            Path: /random
+            Method: GET

@@ -1,0 +1,23 @@
+{
+   "name": "sam-app-api",
+   "version": "1.0.0",
+   "description": "",
+   "main": "handler.js",
+   "dependencies": {
+      "@types/node": "^10.12.18",
+      "pg": "^7.8.0",
+      "reflect-metadata": "^0.1.10",
+      "typeorm": "0.2.11"
+   },
+   "devDependencies": {
+      "ts-node": "3.3.0",
+      "@types/node": "^8.0.29",
+      "typescript": "2.5.2"
+   },
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "ts-node src/index.ts"
+   },
+   "author": "",
+   "license": "ISC"
+}

@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: A simple Example with API.
+Resources:
+  hello:
+    Properties:
+      CodeUri: s3://kushtrimsbucket/3d1c8554e7471d219343e886f6a06509
+      Description: A simple backend (read/write to DynamoDB) with a RESTful API endpoint
+        using Amazon API Gateway.
+      Events:
+        Api1:
+          Properties:
+            Method: GET
+            Path: /hello
+          Type: Api
+      Handler: handler.hello
+      MemorySize: 512
+      Runtime: nodejs8.10
+      Timeout: 10
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31

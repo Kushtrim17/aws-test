@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Generate random number.
+Resources:
+  hello:
+    Properties:
+      CodeUri: s3://kushtrimsbucket/0b5e77d97a441b2154492ee5a7c6f09c
+      Description: A simple AWS example
+      Events:
+        Api1:
+          Properties:
+            Method: GET
+            Path: /random
+          Type: Api
+      Handler: handler.insertUsers
+      MemorySize: 512
+      Runtime: nodejs8.10
+      Timeout: 10
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
