@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: 'Connect to RDS db instance using TypeORM'
+Resources:
+  users:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: handler.insertUsers
+      Runtime: nodejs8.10
+      CodeUri: .
+      Description: 'A simple AWS with TypeORM'
+      MemorySize: 512
+      Timeout: 10
+      Events:
+        Api1:
+          Type: Api
+          Properties:
+            Path: /users
+            Method: GET
