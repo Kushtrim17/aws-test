@@ -63,3 +63,14 @@ A great tutorial to develop and test locally using SAM CLI -> [Local Testing and
 AWS SAM CLI Github -> [Github](https://github.com/awslabs/aws-sam-cli)
 
 AWS SERVERLESS EXAMPLE -> [Example](https://github.com/aws-samples/aws-serverless-samfarm)
+
+**SAM BEST PRACTICES**
+
+* Unless function handlers share code, SPLIT THEM into their own independent Lambda functions files or binaries
+  * Another option is to USE LANGUAGE SPECIFIC PACAGES to share common code between functions
+
+* Unless independent Lambda functions share event sources, SPLIT THEM into their own code repositories with their own SAM templates
+
+* Locally VALIDATE your YAML or JSON SAM files before committing them. Then do it again in your CI/CD process
+
+**More Best Practices** from minute [39:25](https://www.youtube.com/watch?v=QRSc1dL-I4U)
