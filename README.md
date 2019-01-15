@@ -55,3 +55,5 @@ To run the apps you have to install the dependencies inside the functions(if the
 More about AWS SAM Templates ->[AWS SAM TEMPLATE](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-template-basics.html)
 
 More about AWS SAM CLI -> [SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-reference.html#serverless-sam-cli)
+
+A great tutorial to develop and test locally using SAM CLI -> [Local Testing and Deployment Best Practices](https://www.youtube.com/watch?v=QRSc1dL-I4U).
