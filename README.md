@@ -49,6 +49,9 @@ To run the apps you have to install the dependencies inside the functions(if the
 `  --capabilities CAPABILITY_IAM \`<br />
 `  --region us-west-2`<br />
 
+
+Sometimes these two commands might not work (I am not sure yet why). In that case use the following [link](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-deploying.html) to package and deploy
+
 ##########################################################################################
 
 
