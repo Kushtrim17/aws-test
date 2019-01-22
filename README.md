@@ -36,7 +36,7 @@ To run the apps you have to install the dependencies inside the functions(if the
 
 `sam deploy \`<br />
 `  --template-file packaged.yaml \`<br />
-`  --stack-name [APP_NAME] \` <br />
+`  --stack-name [STACK_NAME] \` <br />
 `  --capabilities CAPABILITY_IAM \`<br />
 `  --region [REGION_NAME]`<br />
 
@@ -52,7 +52,7 @@ To run the apps you have to install the dependencies inside the functions(if the
 
 Sometimes these two commands might not work (I am not sure yet why). In that case use the following [link](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-deploying.html) to package and deploy
 
-`sam deploy --template-file ./packaged.yaml --stack-name mystack --capabilities CAPABILITY_IAM`
+`sam deploy --template-file ./packaged.yaml --stack-name [STACK_NAME] --capabilities CAPABILITY_IAM`
 ##########################################################################################
 
 
