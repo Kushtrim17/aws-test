@@ -78,3 +78,14 @@ AWS SERVERLESS EXAMPLE -> [Example](https://github.com/aws-samples/aws-serverles
 * Locally VALIDATE your YAML or JSON SAM files before committing them. Then do it again in your CI/CD process
 
 **More Best Practices** from minute [39:25](https://www.youtube.com/watch?v=QRSc1dL-I4U)
+
+## Recommended VS Code extensions
+
+- [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) to automatically configure basic editor settings.
+- [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin) (*) to show and fix linting errors in VS Code.
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.JavaScriptPrettier) to correctly format code.
+- [Swagger-Viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer) - preview swagger documentation within vs code or in the browser.
+- [Openapi-Lint](https://marketplace.visualstudio.com/items?itemName=mermade.openapi-lint) - validate & lint OpenAPI 3.0.X; convert between OpenAPI 2.0 & 3.0.X; convert to YAML & JSON; resolves external $refs; intellisense for files named *openapi.json, *openapi.yaml, *openapi.yml, *oas3.json; snippets
+
+\* The extension is in the preview now and does not support [fixing on file save](https://github.com/Microsoft/vscode-typescript-tslint-plugin/issues/2), so upvote the issue. However the approach taken by this extension is inherently better and faster then the [original one](https://marketplace.visualstudio.com/items?itemName=eg2.tslint), so we try using it.
+
